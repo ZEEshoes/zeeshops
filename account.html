@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.1">
+	<title>Acoout - ZEEhoes</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="header">
+<div class="container">
+		<div class="navbar">
+		<div class="logo">
+			<img src="zee.jpg" width="135px">
+		</div>
+		<nav>
+			<ul id="MenuItems">
+				<li><a href="zeeshoes.html">Home</a></li>
+				<li><a href="product-detail.html">Products</a></li>
+				<li><a href="aboutt.html">About</a></li>
+				<li><a href="account.html">Account</a></li>
+			</ul>
+		</nav>
+		<a href="cart.html"><img src="tas.jpg" class="tas-icon"></a>
+	    <img src="menu.jpg" class="menu-icon"
+		onclick="menutoggle()">		
+</div>
+</div>
+
+<!----- account-page -------->
+<div class="account-page">
+	<div class="container">
+		<div class="row">
+			<div class="col-2">
+				<img src="bg.jpg" width="100%">
+			</div>
+			<div class="col-2">
+				<div class="form-container">
+					<div class="form-btn">
+						<span onclick="login()">Login</span>
+						<span onclick="register()">Register</span>
+						<hr id="Indicator">
+					</div>
+
+					<form id="LoginForm">
+						<input type="text" placeholder="Username">
+						<input type="password" placeholder="Password">
+						<button type="Submit" class="btn">Login</button>
+						<a href="">Forgot Password</a>
+					</form>
+
+					<form id="RegFrom">
+						<input type="text" placeholder="Username">
+						<input type="email" placeholder="Email">
+						<input type="password" placeholder="Password">
+						<button type="Submit" class="btn">Register</button>
+					</form>
+				</div>
+		</div>
+	</div>
+</div>
+
+
+<!----- footer -------->
+
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="footer-col-1">
+				<h3></h3>
+				<p></p>
+			</div>
+			<div class="footer-col-2">
+				
+				<p>Tujuan Kami
+			   Demi kenyamanan customer kita memberikan kualitas produk yang sangat baik dan berbagai macam model untuk keseharian</p>
+			</div>
+			<div class="footer-col-3">
+			</div>
+		</div>
+		<hr>
+		<p class="Copyright">Copyright 2022 - Dewi Yuliyanti</p>
+	</div>
+</div>
+<!-----js for toggle menu-------->
+<script>
+	var MenuItems = document.getElementById("MenuItems");
+
+	MenuItems.style.maxHeight = "0px";
+
+	function menutoggle(){
+		if (MenuItems.style.maxHeight == "0px")
+		{
+			MenuItems.style.maxHeight = "200px";
+		}
+		else
+		{
+			MenuItems.style.maxHeight = "0px";
+		}
+	}
+
+</script>
+
+
+<!-----js for toggle from-------->
+<script>
+	var LoginFrom = document.getElementById("LoginFrom");
+	var RegFrom = document.getElementById("RegFrom");
+	var indicator = document.getElementById("Indicator");
+
+	function register(){
+
+		RegFrom.style.transfrom = "translateX(0px)";
+		LoginFrom.style.transfrom = "translateX(0px)";
+		indicator.style.transfrom = "translateX(100px)";
+	}
+
+	function login(){
+
+		RegFrom.style.transfrom = "translateX(300px)";
+		LoginFrom.style.transfrom = "translateX(300px)";
+		indicator.style.transfrom = "translateX(0px)";
+	}
+
+</script>
+
+
+
+
+</body>
+</html>

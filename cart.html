@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.1">
+	<title>All Products - ZEEshoes</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="container">
+		<div class="navbar">
+		<div class="logo">
+			<img src="zee.jpg" width="135px">
+		</div>
+		<nav>
+			<ul id="MenuItems">
+				<li><a href="zeeshoes.html">Home</a></li>
+				<li><a href="product-detail.html">Products</a></li>
+				<li><a href="aboutt.html">About</a></li>
+				<li><a href="account.html">Account</a></li>
+			</ul>
+		</nav>
+		<a href="cart.html"><img src="tas.jpg" class="tas-icon"></a>
+		<img src="menu.jpg" class="menu-icon"
+		onclick="menutoggle()">
+	</div>
+</div>
+
+<!----- cart items details -------->
+
+<div class="small-container cart-page">
+	
+	<table>
+		<tr>
+			<th>Product</th>
+			<th>Quantity</th>
+			<th>Subtotal</th>
+		</tr>
+		<tr>
+			<td>
+				<div class="cart-info">
+					<img src="product4.jpg">
+				</div>
+				<p>Full White Shoes</p>
+				<small>Price: Rp 250.000</small>
+				<br>
+				<a href="">Remove</a>
+			</td>
+			<td><input type="number" value="1"></td>
+			<td>Rp250.000</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="cart-info">
+					<img src="product1.jpg">
+				</div>
+				<p>Cassual cream shoes</p>
+				<small>Price: Rp 199.000</small>
+				<br>
+				<a href="">Remove</a>
+			</td>
+			<td><input type="number" value="1"></td>
+			<td>Rp199.000</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="cart-info">
+					<img src="2.jpg">
+				</div>
+				<p>Full Color Shoes</p>
+				<small>Price: Rp 280.000</small>
+				<br>
+				<a href="">Remove</a>
+			</td>
+			<td><input type="number" value="1"></td>
+			<td>Rp 280.000</td>
+		</tr>
+	</table>
+	<div class="total-price">
+		
+		<table>
+			<tr>
+				<td>Subtotal</td>
+				<td>Rp 729.000</td>
+			</tr>
+		</table>
+	</div>
+
+	<div class="row row-2">
+		<h2>Pembayaran</h2>
+		<select>
+			<option>Transfer via Bank</option>
+			<option>Dana</option>
+			<option>Ovo</option>
+			<option>Gopay</option>
+			<option>Shoppe Pay</option>
+		</select>
+	</div>
+
+	<div class="row row-2">
+		<h2>Pengiriman</h2>
+		<select>
+			<option>JNE</option>
+			<option>J&T</option>
+			<option>Si Cepat</option>
+		</select>
+	</div>
+	<br>
+	<a href="account.html" class="btn">Check out &#8594;</a>
+
+
+
+</div>
+
+
+<!----- footer -------->
+
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="footer-col-1">
+				<h3></h3>
+				<p></p>
+			</div>
+			<div class="footer-col-2">
+				
+				<p>Tujuan Kami
+				Demi kenyamanan customer kita memberikan kualitas produk yang sangat baik dan berbagai macam model untuk keseharian.</p>
+			</div>
+			<div class="footer-col-3">
+			</div>
+		</div>
+		<hr>
+		<p class="Copyright">Copyright 2022 - Dewi Yuliyanti</p>
+	</div>
+</div>
+<!-----js for toggle menu-------->
+<script>
+	var MenuItems = document.getElementById("MenuItems");
+
+	MenuItems.style.maxHeight = "0px";
+
+	function menutoggle(){
+		if (MenuItems.style.maxHeight == "0px")
+		{
+			MenuItems.style.maxHeight = "200px";
+		}
+		else
+		{
+			MenuItems.style.maxHeight = "0px";
+		}
+	}
+
+</script>
+
+</body>
+</html>

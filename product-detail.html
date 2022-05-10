@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.1">
+	<title>All Products - ZEEshoes</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="container">
+		<div class="navbar">
+		<div class="logo">
+			<img src="zee.jpg" width="135px">
+		</div>
+		<nav>
+			<ul id="MenuItems">
+				<li><a href="zeeshoes.html">Home</a></li>
+				<li><a href="product.html">Products</a></li>
+				<li><a href="aboutt.html">About</a></li>
+				<li><a href="account.html">Account</a></li>
+			</ul>
+		</nav>
+		<a href="cart.html"><img src="tas.jpg" class="tas-icon"></a>
+		<img src="menu.jpg" class="menu-icon"
+		onclick="menutoggle()">
+	</div>
+</div>
+
+<!----- single product details -------->
+<div class="small-container single-product">
+	<div class="row">
+		<div class="col-2">
+			<img src="product4.jpg" width="100%">
+		</div>
+		<div class="col-2">
+			<h1>Full White Shoes</h1>
+			<h4>Rp. 250.000</h4>
+			<select>
+				<option>Select Size</option>
+				<option>37</option>
+				<option>38</option>
+				<option>39</option>
+				<option>40</option>
+				<option>41</option>
+				<option>42</option>
+				<option>43</option>
+				<option>44</option>
+			</select>
+			<input type="number" value="1">
+			<a href="cart.html" class="btn">Add To Cart</a>
+
+			<h3>Detail Product<i class="fa fa-indent"></i></h3>
+			<br>
+			<p>Dengan nuansa full white menampilkan efek yang sangat cocok digunakan dalam acara formal maupun semi formal</p>
+	</div>
+</div>
+
+<div class="small-container">
+	<div class="row">
+		<div class="col-4"></div>
+		<img src="1.jpg">
+		<h4>Full White Shoes</h4>
+		<div class="rating">
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star-o"></i>
+		</div>
+		<p>RP. 250.000</p>
+	</div>
+	<div class="row">
+		<div class="col-4"></div>
+		<img src="2.jpg">
+		<h4>Full color shoes</h4>
+		<div class="rating">
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star-o"></i>
+		</div>
+		<p>RP. 280.000</p>
+	</div>
+	<div class="row">
+		<div class="col-4"></div>
+		<img src="3.jpg">
+		<h4>Full Black Shoes</h4>
+		<div class="rating">
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+		</div>
+		<p>RP. 310.000</p>
+	</div>
+	<div class="row">
+		<div class="col-4"></div>
+		<img src="product1.jpg">
+		<h4>Cassual Shoes</h4>
+		<div class="rating">
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+		</div>
+		<p>RP. 199.000</p>
+	</div>
+</div>
+
+<div class="page-btn">
+	<span>1</span>
+	<span>2</span>
+	<span>3</span>
+	<span>4</span>
+	<span>&#8594;</span>
+</div>
+<!----- footer -------->
+
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="footer-col-1">
+				<h3></h3>
+				<p></p>
+			</div>
+			<div class="footer-col-2">
+				
+				<p>Tujuan Kami
+			   Demi kenyamanan customer kita memberikan kualitas produk yang sangat baik dan berbagai macam model untuk keseharian</p>
+			</div>
+			<div class="footer-col-3">
+			</div>
+		</div>
+		<hr>
+		<p class="Copyright">Copyright 2022 - Dewi Yuliyanti</p>
+	</div>
+</div>
+<!-----js for toggle menu-------->
+<script>
+	var MenuItems = document.getElementById("MenuItems");
+
+	MenuItems.style.maxHeight = "0px";
+
+	function menutoggle(){
+		if (MenuItems.style.maxHeight == "0px")
+		{
+			MenuItems.style.maxHeight = "200px";
+		}
+		else
+		{
+			MenuItems.style.maxHeight = "0px";
+		}
+	}
+
+</script>
+
+</body>
+</html>
